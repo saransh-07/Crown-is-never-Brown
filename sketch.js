@@ -638,7 +638,7 @@ if(aimState===true){
 
 
  if(allPlayers!==undefined){
-if(allPlayers.player1.health===0){
+if(allPlayers.player1.health<=0){
     player1.destroy();
     if( player.index === 1){
         text("you have lost",player.x,player.y - 450);
@@ -649,7 +649,7 @@ if(allPlayers.player1.health===0){
     game.updateState(2);
     game.end();
 }
-if(allPlayers.player2.health===0){
+if(allPlayers.player2.healt<=0){
     player2.destroy();
     if( player.index === 2){
         text("you have lost",player.x,player.y - 450);
