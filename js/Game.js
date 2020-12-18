@@ -282,15 +282,7 @@ class Game {
             player.y = 1450;
             player.update();
           } 
-          if(keyWentDown("u")){
-            player.score+=25;
-            player.correct = 4;
-            player.update();
-          }
-          if(keyWentDown("l")){
-            player.monsterH = 0;
-            player.update();
-          }
+
           if(aimState===false && ref2 === true){
             if (keyDown(UP_ARROW) || keyDown("w") ) {
               player.y = player.y - 10;
@@ -329,15 +321,7 @@ class Game {
           player.y = 1450;
           player.update();
         }
-        if(keyWentDown("u")){
-          player.score+=25;
-          player.correct = 4;
-          player.update();
-        }
-        if(keyWentDown("l")){
-          player.monsterH = 0;
-          player.update();
-        }
+       
         if(aimState===false && ref2 === true){
           if (keyDown(UP_ARROW) || keyDown("w") ) {
             player.y = player.y - 10;
