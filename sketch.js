@@ -862,7 +862,7 @@ pop();
             for(var a=0;a<bullets2.length;a++){
                 if(bullets2[a].isTouching(monster)){
                     player.monsterH -= 100;
-                    player.monsterH.update();
+                    player.update();
                     bullets2[a].destroy();
                 }
             }
