@@ -806,7 +806,7 @@ pop();
             rect(monster.x - 50,monster.y - 200,100,15);
             
         }
-      if(player1.isTouching(crown) && player.health!==0){
+      if(player1.isTouching(crown) && player.health!==0 && player.correct === 4&& player.score>25){
           crown.destroy();
         player1.destroy();
         player2.destroy();
@@ -822,7 +822,7 @@ pop();
           player.y = 1450;
           player.update();
       }
-      if(player2.isTouching(crown) && player.health!==0){
+      if(player2.isTouching(crown) && player.health!==0 && player.correct === 4 && player.score>25){
           crown.destroy();
           player1.destroy();
         player2.destroy();
